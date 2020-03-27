@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anggota</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    </video>
+    <form class="box" action="login2.php" method="post">
+      <h1>Petugas</h1>
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" name="login" value ="login">
+      <a href="register2.php">Daftar</a>
+    </form>
+  </body>
+</html>
