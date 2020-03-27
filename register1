@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anggota</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <form class="box" action="" method="post">
+      <h1>Daftar</h1>
+      <input type="text" name="nama" placeholder="Nama">
+      <input type="text" name="kelas" placeholder="kelas">
+      <input type="text" name="telp" placeholder="Telp">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password" >
+      <input type="submit" name="simpan" value="Daftar">
+    </form>
+  </body>
+</html>
+
+
+<?php
+    include 'config.php';
+    if(@$_POST['simpan']){
+      $nama = @$_POST['nama'];
+      $kelas = @$_POST['kelas'];
+      $telp = @$_POST['telp'];
+      $username = @$_POST['username'];
+      $password = @$_POST['password'];
+      $pass = md5($password);
+//md5 = enkripsi buat password supaya tdk kelihatan
+      $query = mysqli_query($koneksi, "INSERT INTO `users` (nama,kelas,telp,username,password)
+                    VALUES ('$nama', '$kelas', '$telp', '$username','$pass')");
+      if($query){
+        echo "<div class='form'>
+          <h3> Berhasil registrasi akun </h3>
+          <br/> Klik untuk <a href='index.php'>Login</a>
+          </div>";
+      }else{
+        echo "data gagal di input";
+      }
+    }
+   ?>
