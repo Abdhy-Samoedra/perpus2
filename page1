@@ -1,0 +1,49 @@
+<?php
+include 'aset/header.php';
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div align="center">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md">
+            <h2 align="center"><i class="fas fa-book"></i> Perpustakaan SMK Telkom Malang</h2>
+            <hr class="bg-dark">
+          </div>
+        </div>
+        <div align="center" style="transform: translate(17%,12%);">
+        <div class="row">
+          <div class="col-md-4">
+            <div style="width: 18rem;" class="card bg-info">
+        <div class="card-body text-white" style="text-align: left;"  >
+          <h5 class="card-title">masuk sebagai</h5>
+          <p class="card-text" style="font-size:60px">Anggota</p>
+          <a href="http://localhost/LOGINREGIST/index.php" class="text-white">masuk <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-primary" style="width: 18rem;">
+        <div class="card-body text-white" style="text-align: left   ;">
+          <h5 class="card-title">masuk sebagai</h5>
+          <p class="card-text" style="font-size:60px">Petugas</p>
+          <a href="http://localhost/LOGINREGIST/index2.php" class="text-white">masuk <i class="fas fa-angle-double-right"></i></a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </body>
+</html>
+
+<?php
+include 'aset/footer.php';
+ ?>
